@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsignin">
+
+    <TextView
+        android:text="Sign in"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="165dp"
+                android:padding="15dp"
+                android:id="@+id/getUsername"
+                android:hint="Email or Username"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textfield_roundcorner"
+            
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+        />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:id="@+id/getPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/textfield_roundcorner"
+                android:layout_marginBottom="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+        />
+
+            <Button
+                android:text="Sign in"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:id="@+id/signinAcc"
+                android:layout_marginTop="20.0dp"
+                android:background="@drawable/button_roundcorner" 
+                
+            />
+
+            <TextView
+                android:id="@+id/gotosignup"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Account"
+                android:textSize="18dp"
+                android:clickable="true"
+                   
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

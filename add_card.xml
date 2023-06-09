@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgaddcard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/backbtncard"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back" />
+
+    <TextView
+        android:text="Add Card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        />
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+            android:padding="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <EditText
+            android:id="@+id/textfront"
+            android:hint="Front Card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="15dp"    
+            android:textSize="20sp"
+            android:background="@drawable/textfield_roundcorner"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/textback"
+            android:hint="Back Card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="15dp"    
+            android:textSize="20sp"
+            android:background="@drawable/textfield_roundcorner"
+            android:layout_marginBottom="30dp"/>
+
+
+        <Button
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:id="@+id/btncard"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_roundcorner" />
+
+        <Button
+            android:text="Add more"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:id="@+id/btncardmore"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_roundcorner"  />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
